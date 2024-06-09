@@ -37,6 +37,7 @@ BODY {
     min-height: 100vh;
     scroll-behavior: smooth;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem;
@@ -57,6 +58,10 @@ ARTICLE {
     overflow: hidden;
     width: 100%;
     max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     SPAN {
         display: block;
     }
@@ -138,9 +143,17 @@ ARTICLE {
         }
     }
 }
-
+.attribution {
+    padding: 2rem 0;
+    P {
+        text-align: center;
+    }
+    A {
+        color: var(--DarkCyan);
+    }
+}
 @media screen and (min-width: 600px) {
     ARTICLE {
-        display: flex;
+        flex-direction: row;
     }
 }
