@@ -27,7 +27,7 @@
 }
 
 :focus {
-    outline: 2px solid red;
+    outline: 2px solid var(--DarkCyan);
     outline-offset: 0.1rem;
 }
 
@@ -98,6 +98,7 @@ ARTICLE {
         align-items: center;
         gap: 1rem;
         padding: 1rem 0;
+        transition: all 250ms ease;
         SPAN {
             display: flex;
             justify-content: center;
@@ -110,7 +111,12 @@ ARTICLE {
             width: 15px;
             height: 16px;
         }
+        &:active,
+        &:hover {
+            filter: brightness(75%);
+        }
     }
+
     .info {
         height: 100%;
         width: 100%;

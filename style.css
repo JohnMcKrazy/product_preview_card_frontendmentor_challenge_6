@@ -27,7 +27,7 @@
 }
 
 :focus {
-  outline: 2px solid red;
+  outline: 2px solid var(--DarkCyan);
   outline-offset: 0.1rem;
 }
 
@@ -102,6 +102,7 @@ ARTICLE BUTTON {
   align-items: center;
   gap: 1rem;
   padding: 1rem 0;
+  transition: all 250ms ease;
 }
 ARTICLE BUTTON SPAN {
   display: flex;
@@ -114,6 +115,9 @@ ARTICLE BUTTON SPAN {
 ARTICLE BUTTON .icon_container {
   width: 15px;
   height: 16px;
+}
+ARTICLE BUTTON:active, ARTICLE BUTTON:hover {
+  filter: brightness(75%);
 }
 ARTICLE .info {
   height: 100%;
